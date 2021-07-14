@@ -1,7 +1,7 @@
 {
   "name": "Music Bot",
   "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
-  "logo": "https://telegra.ph/file/d0dfff886fc90bbde5833.jpg".
+  "logo": "https://telegra.ph/file/d0dfff886fc90bbde5833.jpg",
   "keywords": ["music", "voicechat", "telegram"],
   "repository": "https://github.com/Rifkiarisman/Astronout-Music",
   "stack": "container",
