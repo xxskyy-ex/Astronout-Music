@@ -11,9 +11,9 @@ admins = {}
 API_ID = int(getenv("API_ID"))
 API_HASH = getenv("API_HASH", "")
 
-START_IMG = getenv("START_IMG", "https://telegra.ph/file/c5f676adcdbe5a0bbb232.jpg")
+START_IMG = getenv("START_IMG", "https://telegra.ph/file/d0dfff886fc90bbde5833.jpg")
 
-DURATION_LIMIT = int(getenv("DURATION_LIMIT", "10"))
+DURATION_LIMIT = int(getenv("DURATION_LIMIT", "250"))
 
 COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ !").split())
 
