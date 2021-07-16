@@ -11,13 +11,16 @@ async def start(_, message: Message):
         text="**Hello 👋🏻 {}!**\n\nI **Can Play Music In Voice Chats of Telegram Groups.**I Have A **lot of cool feature that will amaze You!**\n\n**Click /cmdlist For More Help On My Usage ❤**".format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
             [[
-            InlineKeyboardButton("➕ Add To Your Group ➕", url="https://t.me/GroupMuSicPlayBot?startgroup=true")
+            InlineKeyboardButton("➕ Add To Your Group ➕", url="https://t.me/astronoutmusicBot?startgroup=true")
             ],[
-            InlineKeyboardButton("💬 Group", url="https://t.me/MusicBotSupports"),
-            InlineKeyboardButton("Channel 🔊", url="https://t.me/GroupMusicXNews")
+            InlineKeyboardButton("💬 Group Chat", url="https://t.me/virtuallbullshit"),
+            InlineKeyboardButton("Support Channel 🔊", url="https://t.me/astronoutupdate")
             ],[
             InlineKeyboardButton("Commands 🛠", url="https://telegra.ph/Music-Bot-05-07")
+            ],[
+            InlineKeyboardButton("Managed By👑", url="https://t.me/sokapgblg")
             ]]
+
         ),
         disable_web_page_preview=True
     )
@@ -34,7 +37,7 @@ async def gstart(_, message: Message):
     )
 
 
-@Client.on_message(filters.command(["cmdlist", "start@GroupMusicPlayBot"]) & filters.private & ~filters.channel)
+@Client.on_message(filters.command(["cmdlist", "start@astronoutmusicbot"]) & filters.private & ~filters.channel)
 async def cmdlist(_, message: Message):
     await message.reply_text(
         text="""**Group Music Bot : Help Menu**
@@ -67,7 +70,7 @@ __× First Add Me To Your Group..
 • `/userbotleave` : __Assistant Leaves From The Group.__""",
         reply_markup=InlineKeyboardMarkup(
               [[
-              InlineKeyboardButton(text="🎙️ Support Group 🎙️", url="https://t.me/MusicBotSupports")
+              InlineKeyboardButton(text="🎙️ Support Group 🎙️", url="https://t.me/astronoutupdate")
               ]]
           )
       )
