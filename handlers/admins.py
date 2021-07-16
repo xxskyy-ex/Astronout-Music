@@ -106,4 +106,20 @@ async def skip(_, message: Message):
 @errors
 async def admincache(client, message: Message):
     set(message.chat.id, [member.user for member in await message.chat.get_members(filter="administrators")])
-     #await message.reply_text("✯𝗩𝗖𝗣𝗹𝗮𝘆𝗕𝗼𝘁✯=❇️ Admin cache refreshed!")
+     #await message.reply_text("Astronout Music=❇️ Admin cache refreshed!")
+@Client.on_message(
+    filters.command("Owner")
+)
+     #await message.reply_text(Kyy👑 @sokapgblg)
+
+@Client.on_message(
+     filers.command("music")
+async def start(_, message: Message):
+    await message.reply_text(
+        text="**Hello 👋🏻 {}!**\n\nI **Jika ingin menggunakan bot musik di grup**silahkan tambah bot dan assistant secara manual**atau juga mengirimkan link grup ke assistant musiknya!!**
+        reply_markup=InlineKeyboardMarkup(
+            [[
+            InlineKeyboardButton("ASSISTANT MUSIC", url="https://t.me/asstronoutmusic"))
+            ],[
+            InlineKeyboardButton("BOT MUSIC", url="https://t.me/astronoutmusicbot"),
+            ]]
