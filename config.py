@@ -15,6 +15,6 @@ START_IMG = getenv("START_IMG", "https://telegra.ph/file/d0dfff886fc90bbde5833.j
 
 DURATION_LIMIT = int(getenv("DURATION_LIMIT", "250"))
 
-COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ !").split())
+COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ ! .").split())
 
 SUDO_USERS = list(map(int, getenv("SUDO_USERS", "").split()))
